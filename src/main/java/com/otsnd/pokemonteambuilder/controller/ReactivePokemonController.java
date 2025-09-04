@@ -24,7 +24,7 @@ public class ReactivePokemonController {
     }
 
     @GetMapping("/{id}")
-    public Mono<?> wea(@PathVariable("id")  Integer id) {
+    public Mono<?> getPokemonById(@PathVariable("id")  Integer id) {
         return this.webClient.get()
                 .uri("/pokemon/{id}", id)
                 .retrieve()
