@@ -3,16 +3,11 @@ package com.otsnd.pokemonteambuilder.dtos;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.util.List;
 
 @Data
 @JsonDeserialize
 @NoArgsConstructor
-public class PokemonDTO {
-    private Long id;
+public class TrainerDTO {
     private String name;
-    private Integer order;
-    private List<TypesDTO> types;
+    private String gender;
 }
-
-
