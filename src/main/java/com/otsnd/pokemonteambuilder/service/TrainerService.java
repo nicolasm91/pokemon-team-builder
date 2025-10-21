@@ -1,18 +1,18 @@
 package com.otsnd.pokemonteambuilder.service;
 
-import com.otsnd.pokemonteambuilder.client.PokemonClient;
-import com.otsnd.pokemonteambuilder.dtos.PokemonDTO;
+import com.otsnd.pokemonteambuilder.client.TrainerClient;
+import com.otsnd.pokemonteambuilder.dtos.TrainerDTO;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PokemonService {
-    private final PokemonClient client;
+public class TrainerService {
+    private final TrainerClient client;
 
-    public PokemonService(PokemonClient client) {
+    public TrainerService(TrainerClient client) {
         this.client = client;
     }
 
-    public PokemonDTO getById(String id) {
-        return this.client.GetPokemonById(id);
+    public TrainerDTO getById(String id) {
+        return this.client.GetTrainerById(id);
     }
 }
