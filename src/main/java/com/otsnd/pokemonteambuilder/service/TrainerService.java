@@ -1,6 +1,6 @@
 package com.otsnd.pokemonteambuilder.service;
 
-import com.otsnd.pokemonteambuilder.client.TrainerClient;
+import com.otsnd.pokemonteambuilder.client.interfaces.TrainerClient;
 import com.otsnd.pokemonteambuilder.dtos.TrainerDTO;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.otsnd.pokemonteambuilder.client;
+package com.otsnd.pokemonteambuilder.client.interfaces;
 
 import com.otsnd.pokemonteambuilder.dtos.TrainerDTO;
 
