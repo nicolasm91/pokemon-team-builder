@@ -67,4 +67,5 @@ public class TrainerService {
                 .filter(p -> p.getStatus() == PokemonStatus.TEAM)
                 .collect(Collectors.toList());
     }
+
 }
