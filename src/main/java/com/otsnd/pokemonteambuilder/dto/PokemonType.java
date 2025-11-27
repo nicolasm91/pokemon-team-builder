@@ -1,4 +1,4 @@
-package com.otsnd.pokemonteambuilder.dtos;
+package com.otsnd.pokemonteambuilder.dto;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 

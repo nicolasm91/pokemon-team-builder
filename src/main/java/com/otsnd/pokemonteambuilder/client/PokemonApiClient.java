@@ -1,6 +1,7 @@
 package com.otsnd.pokemonteambuilder.client;
 
-import com.otsnd.pokemonteambuilder.dtos.PokemonDTO;
+import com.otsnd.pokemonteambuilder.client.interfaces.PokemonClient;
+import com.otsnd.pokemonteambuilder.dto.PokemonDTO;
 import com.otsnd.pokemonteambuilder.exceptions.PokeAPIServerErrorException;
 import com.otsnd.pokemonteambuilder.exceptions.PokemonNotFoundException;
 import org.springframework.http.HttpRequest;

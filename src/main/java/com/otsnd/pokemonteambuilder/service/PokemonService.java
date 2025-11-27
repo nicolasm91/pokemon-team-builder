@@ -1,7 +1,7 @@
 package com.otsnd.pokemonteambuilder.service;
 
-import com.otsnd.pokemonteambuilder.client.PokemonClient;
-import com.otsnd.pokemonteambuilder.dtos.PokemonDTO;
+import com.otsnd.pokemonteambuilder.client.interfaces.PokemonClient;
+import com.otsnd.pokemonteambuilder.dto.PokemonDTO;
 import org.springframework.stereotype.Service;
 
 @Service
