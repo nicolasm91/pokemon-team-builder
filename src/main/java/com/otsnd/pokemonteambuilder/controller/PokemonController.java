@@ -1,6 +1,6 @@
 package com.otsnd.pokemonteambuilder.controller;
 
-import com.otsnd.pokemonteambuilder.dtos.PokemonDTO;
+import com.otsnd.pokemonteambuilder.dto.PokemonDTO;
 import com.otsnd.pokemonteambuilder.service.PokemonService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

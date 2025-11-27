@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  postgres-db:
+    image: postgres:15-alpine
+    container_name: postgres-pokemon
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: pokemon        # Coincide con tu url jdbc/.../pokemon
+      POSTGRES_USER: admin        # Coincide con spring.datasource.username
+      POSTGRES_PASSWORD: culoconcaca # Coincide con spring.datasource.password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
