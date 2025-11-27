@@ -18,6 +18,7 @@ public class CapturedPokemon {
 
     private String name;   // Apodo o nombre de la especie
 
+    @Column(name = "sprite_url")
     private String spriteUrl; // Opcional: Para mostrar la imagen sin llamar a la API
 
     @Enumerated(EnumType.STRING)
@@ -26,5 +27,6 @@ public class CapturedPokemon {
     // RELACIÓN: Muchos Pokémons pertenecen a Un Entrenador
     @ManyToOne
     @JoinColumn(name = "trainer_id") // Esto crea la columna 'trainer_id' en la base de datos
+    @com.fasterxml.jackson.annotation.JsonIgnore // <--- AGREGA ESTO
     private Trainer trainer;
 }
